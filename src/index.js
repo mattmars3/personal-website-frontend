@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Homepage from './Homepage';
-import { Box, Grommet, Nav, Anchor, Carousel, Header, Avatar } from 'grommet';
+import Homepage from './pages/Homepage';
+
+import { ThemeProvider, createTheme } from '@emotion/react';
+import { customThemeOptions } from './customThemeOptions';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <ThemeProvider theme={customThemeOptions}>
+      <Homepage />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
