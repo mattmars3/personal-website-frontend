@@ -2,17 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Homepage from './pages/Homepage';
-
-import { ThemeProvider, createTheme } from '@emotion/react';
-import { customThemeOptions } from './customThemeOptions';
+import Homepage from './pages/Homepage/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={customThemeOptions}>
-      <Homepage />
-    </ThemeProvider>
+    <Homepage />
   </React.StrictMode>
 );
 
