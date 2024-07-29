@@ -4,7 +4,8 @@ import {
   createBrowserRouter, RouterProvider
 } from 'react-router-dom'
 
-import './index.css';
+//import './index.css';
+//import '../stylesheets/main.css'
 import reportWebVitals from './reportWebVitals';
 
 import Blog from './pages/Blog'
@@ -14,6 +15,7 @@ import About from './pages/About';
 import Professional from './pages/Professional';
 import Photos from './pages/Photos';
 import Settings from './pages/Settings';
+import NotImplemented from './pages/NotImplemented';
 
 const router = createBrowserRouter([
   {
@@ -22,23 +24,23 @@ const router = createBrowserRouter([
   },
   {
     path: '/blog',
-    element: <Blog />
+    element: <NotImplemented pageName="blog" />
   },
   {
     path: '/about',
-    element: <About />
+    element: <NotImplemented pageName="about"/>
   },
   {
     path: '/professional',
-    element: <Professional />
+    element: <NotImplemented pageName="professional" />
   },
   {
     path: '/photos',
-    element: <Photos />
+    element: <NotImplemented pageName="photos" />
   },
   {
     path: '/settings',
-    element: <Settings />
+    element: <NotImplemented pageName="settings" />
   },
   {
     path: '*',

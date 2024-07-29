@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div>
       <NavigationBar />
-      <div>
+      <div className='not-found-body'>
         <h2>Sorry... Page Not Found</h2>
       </div>
     </div>

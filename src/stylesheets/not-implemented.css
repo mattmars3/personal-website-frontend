@@ -1,0 +1,11 @@
+.not-implemented-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50vh;
+
+  font-size: 1.4rem;
+
+  flex-direction: column;
+}
