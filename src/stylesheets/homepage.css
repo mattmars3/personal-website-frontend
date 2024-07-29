@@ -1,0 +1,12 @@
+.homepage-body {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-body div {
+  width: 50%;
+}
+
+.homepage-body div * {
+  margin: 2%;
+}
